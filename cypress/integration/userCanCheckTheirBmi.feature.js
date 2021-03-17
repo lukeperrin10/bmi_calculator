@@ -6,6 +6,9 @@ describe('User can check their BMI', () => {
     it('user can enter weight and height', () => {
             cy.visit('http://localhost:3001')
             cy.contains('BMI Calculator')
+            cy.get('#weight').type('85')
+            cy.get('#height').type('196')
+            cy.get('#calculate').click
 
     })
 
