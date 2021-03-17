@@ -1,0 +1,11 @@
+{
+  "name": "bmi_calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lukeperrin10/bmi_calculator.git",
+  "author": "Luke <lukeperrin27@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^6.7.1"
+  }
+}
