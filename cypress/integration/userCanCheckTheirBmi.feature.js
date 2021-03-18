@@ -18,4 +18,9 @@ describe('User can check their BMI', () => {
 
     })
 
+    it('displays a message of you are within normal parameters.', () => {
+        cy.get('#results').should('contain', 'normal')
+    
+    })
+
 })
