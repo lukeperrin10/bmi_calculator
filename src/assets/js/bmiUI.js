@@ -8,3 +8,13 @@ const calculateBMI = () => {
     displayResultsElement.innerHTML = `<h1 id="resultdisplay"> Your BMI value is: ${results} and you are ${message}.</h1>`
 
 }
+
+
+document.getElementById("height")
+    .addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("calculate").click();
+        }
+   
+}); 
