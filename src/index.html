@@ -13,11 +13,10 @@
     <header>
         <h1 id="main_page_title">BMI Calculator</h1>
     </header> 
-            <div id="calculator_input">
-                <input type="text" name="weight" placeholder="Enter you weight in kg">
-                <input type="text" name="height" placeholder="Enter your height in cm">
-                <button id = "calculate">Calculate</button>
-            </div>
+            <input type="text" id="weight" placeholder="Enter you weight in kg">
+            <input type="text" id="height" placeholder="Enter your height in cm">
+            <button onclick="calculateBMI()" id = "calculate">Calculate</button>
+            
         <div id="results"></div>
         <script src="./assets/js/bmiCalculator.js"></script>
         <script src="./assets/js/bmiUI.js"></script>

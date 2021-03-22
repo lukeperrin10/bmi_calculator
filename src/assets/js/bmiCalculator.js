@@ -1,11 +1,12 @@
 
-const calculateMetricBMI = {
-    calculate(weight,height) {
-        //debugger
-        let bmiValue = weight / (height/100*height / 100)
-        return bmiValue.tofixed(2)
-    }
+const calculateMetricBMI = (weight, height) => {
+    let result
+    result  = weight / ((height / 100) * (height / 100))
+    return result.toFixed(2)
+
 }
+    
+
 
 const getBMIclassification = (bmiResult) => {
 
@@ -13,7 +14,7 @@ const getBMIclassification = (bmiResult) => {
         return "underweight"
     }
     else if (bmiResult >= 18.5 && bmiResult <= 24.9) {
-        return "within normal paremeters"
+        return "within normal parameters"
     }
     else if (bmiResult >= 25 && bmiResult <= 29.9) {
         return "overweight"

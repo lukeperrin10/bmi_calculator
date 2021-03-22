@@ -12,15 +12,13 @@ describe('User can check their BMI', () => {
 
     describe('input valid data', () => {
         before(() => {
-            cy.get('input[name=weight]').type(85)
-            cy.get('input[name=height]').type(196)
-            cy.get('button').click
-
-
+            cy.get('#weight').type('85')
+            cy.get('#height').type('196')
+            cy.get('#calculate').click()
         });
 
-    it('is expected to return a BMI value', () => {
-        cy.get('#results').should('contain.text, your BMI is 22.80')
+    it('is expected to display a BMI value', () => {
+        cy.get('#results').should('contain.text', 'Your BMI value is: 22.13 and you are within normal parameters.')
     });
   });
 });
